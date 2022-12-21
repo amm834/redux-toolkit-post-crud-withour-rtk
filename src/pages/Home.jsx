@@ -22,7 +22,7 @@ const Home = () => {
 
 
     const deletePostByPostId = () => {
-        dispatch(deletePostById(post.id))
+        dispatch(deletePostById({id:post.id}))
         navigate('/')
     };
 
